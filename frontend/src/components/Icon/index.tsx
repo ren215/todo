@@ -1,5 +1,29 @@
-import { css } from '../../../styled-system/css';
+import { cva } from '../../../styled-system/css';
 
+// style
+const iconStyle = cva({
+  base: { textAlign: 'center' },
+  variants: {
+    size: {
+      small: { w: '16px', h: '16px' },
+      medium: { w: '32px', h: '32px' },
+      large: { w: '48px', h: '48px' },
+    },
+    fontSize: {
+      small: { fontSize: '10px' },
+      medium: { fontSize: '20px' },
+      large: { fontSize: '32px' },
+    },
+    bg: {
+      red: { bg: 'red' },
+      blue: { bg: 'blue' },
+      green: { bg: 'green' },
+      pink: { bg: 'pink' },
+    },
+  },
+});
+
+// type
 type Props = {
   text: string;
   size: 'small' | 'medium' | 'large';
@@ -9,29 +33,7 @@ type Props = {
 const Icon = (props: Props) => {
   const { text, size, color } = props;
 
-  // style
-  const sizeStyles = {
-    small: '16px',
-    medium: '32px',
-    large: '48px',
-  };
-
-  const fontSizeStyles = {
-    small: '10px',
-    medium: '20px',
-    large: '32px',
-  };
-
-  const iconStyle = css({
-    w: sizeStyles[size],
-    h: sizeStyles[size],
-    bg: color,
-    fontSize: fontSizeStyles[size],
-    textAlign: 'center',
-    borderRadius: '50%',
-  });
-
-  return <div className={iconStyle}>{text}</div>;
+  return <div className={iconStyle({ size: size, fontSize: size, bg: color })}>{text}</div>;
 };
 
 export default Icon;
