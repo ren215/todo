@@ -1,8 +1,16 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import Icon from './components/Icon';
+
+import './index.css';
+
 const App = () => {
   return (
-    <>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Icon text="平" size="small" color="red" />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
