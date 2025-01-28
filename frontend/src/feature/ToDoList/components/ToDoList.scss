@@ -1,0 +1,52 @@
+@import '../../../styles/base.scss';
+
+.todo-list {
+  background: rgb(231, 231, 231);
+
+  width: 17rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  .title-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+    .kari {
+      display: flex;
+      gap: 0.4rem;
+
+      .todo-item-count {
+        color: $base-color;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .todo-items {
+    .add-button {
+      width: 100%;
+      height: 2rem;
+      border-radius: 0.5rem;
+      background-color: white;
+      padding-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: $base-color;
+    }
+
+    .add-button:hover {
+      opacity: 0.8;
+    }
+
+    .todo-item-content {
+      height: 40rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-right: 0.5rem;
+      gap: 0.2rem;
+      overflow: auto;
+    }
+  }
+}
