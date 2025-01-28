@@ -1,0 +1,29 @@
+@import '../../styles/base.scss';
+
+.sidebar-container {
+  background-color: $base-color;
+  width: 8rem;
+  height: 100%;
+
+  .sidebar-button-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1rem;
+
+    button {
+      width: 80%;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      color: rgb(0, 0, 0);
+    }
+
+    .active {
+      background-color: white;
+    }
+
+    .inactive {
+      color: white;
+    }
+  }
+}
