@@ -5,7 +5,7 @@ import { cva } from '../../../styled-system/css';
 // style
 const HeaderStyle = cva({
   base: {
-    bg: 'pink',
+    bg: '#322653',
     w: '100%',
     h: '50px',
     pl: '5px',
