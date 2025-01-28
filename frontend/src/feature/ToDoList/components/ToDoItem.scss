@@ -1,0 +1,17 @@
+.todo-item {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-icon-content {
+    display: flex;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+  }
+}
