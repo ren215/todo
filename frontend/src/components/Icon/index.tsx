@@ -2,12 +2,12 @@ import { cva } from '../../../styled-system/css';
 
 // style
 const iconStyle = cva({
-  base: { textAlign: 'center' },
+  base: { textAlign: 'center', color: 'white' },
   variants: {
     size: {
-      small: { w: '16px', h: '16px' },
-      medium: { w: '32px', h: '32px' },
-      large: { w: '48px', h: '48px' },
+      small: { w: '16px', h: '16px', borderRadius: '1rem' },
+      medium: { w: '32px', h: '32px', borderRadius: '1rem' },
+      large: { w: '48px', h: '48px', borderRadius: '1rem' },
     },
     fontSize: {
       small: { fontSize: '10px' },
