@@ -1,0 +1,10 @@
+.home-container {
+  width: 100%;
+  padding: 1rem;
+
+  .button-content {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+}
